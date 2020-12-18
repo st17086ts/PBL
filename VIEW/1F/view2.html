@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>sample1</title>
+  <style type="text/css">
+  body { background: beige; margin-left: 2em;}
+  .image_size_m{
+	width: 600px;
+	height: 400px;	
+}
+  </style>
+</head>
+<body>
+  <h1><strong>情報科棟1階</strong></h1>
+  <button onclick="changeImageFront()">Go</button>
+  <button onclick="changeImageBack()">Back</button>
+  <button onclick="changeImageRight()">Right</button>
+  <button onclick="changeImageLeft()">Left</button>
+  <br>
+  <img id="image_place"src="C:\Users\remi0\OneDrive\デスクトップ\program\PBL\実験進捗1204\PBL_PROTOTYPE\情報化棟\J1\Left\1FRONT_LEFT7.jpg" alt = "error 01" class = "image_size_m">
+
+  <script type="text/javascript">
+    // img要素を取得する
+    var img = document.getElementById("image_place");
+    // 表示する画像番号
+    var idx = 0;
+
+    // 画像を切り替える関数
+    function changeImageFront() {
+      idx++;
+      if (idx > 10) {
+        idx = 1;
+      }
+      // img要素のsrcに画像ファイル名を設定する
+      img.src = "./情報化棟/J1/Front/" + "1FRONT" + idx + ".jpg";
+    }
+
+    function changeImageBack(){
+      if(idx == 1){
+        img.src = "./情報化棟/J1/Front/" + "1FRONT" + idx + ".jpg"
+      }
+      else{
+        idx--;
+        img.src = "./情報化棟/J1/Front/" + "1FRONT" + idx + ".jpg"
+      }
+    }
+
+    function changeImageRight(){
+        img.src = "./情報化棟/J1/Right/" + "1FRONT_RIGHT" + idx + ".jpg"
+    }
+
+    function changeImageLeft(){
+      img.src = "./情報化棟/J1/Left/" + "1FRONT_LEFT" + idx + ".jpg"
+    }
+
+    function search(){
+    }
+  </script>
+  <br>
+  <button onclick="changeImageFront()">Go</button>
+  <button onclick="changeImageBack()">Back</button>
+  <button onclick="changeImageRight()">Right</button>
+  <button onclick="changeImageLeft()">Left</button>
+  <br>
+  <ur>
+    <li><a href="view1.html">情報科棟１階</a><br>
+    <li><a href="view2.html">情報科棟２階</a><br>
+    <li><a href="view3.html">情報科棟３階</a>
+    </ur>
+</body>
+</html>
+

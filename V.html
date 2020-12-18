@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>complete</title>
+        <style type="text/css">
+            body { background: beige; margin-left: 2em;}
+            .image_size_m{
+              width: 600px;
+              height: 400px;	
+          }
+        </style>
+    </head>
+    <body>
+        <img id = "f1" src = "daikisutorayou/X.jpg" class = "image_size_m">
+        <br><button onclick = "Button()">GO</button>
+        <br><button onclick = "BACK_Button()">BACK</button>
+        <table>
+            <tr>
+                <td><h4><a href="lesson.html">
+                    <button type="button">トップページへ</button>
+                </a></h4></td>
+                <td><h4><a href="茨城高専マップ.html">
+                    <button type="button">茨城高専マップへ</button>
+                </a></h4></td>
+                <td><h4><a href="view.html">
+                    <button type="button">茨城高専ビューへ</button>
+                </a></h4></td>
+                <td><h4><a href="schoolmap.html">
+                    <button type="button">茨城高専ナビ探索へ</button>
+                </a></h4></td>
+            </tr>
+        </table>
+    
+    </body>
+    <script type = "text/javascript">
+    var query = location.search;
+    var value = query.split('=');
+    //console.log(value[1]);
+    var v = value[1].split(/,,*/);
+    var p = new Array(40);
+    console.log(v.length);
+    console.log(Number(v[0]));
+    for(i=v.length-2;i>=0;i--)
+        console.log(v[i]);
+    for(j=0,i=v.length-2;i>=0;i--,j++){
+        p[j] = Number(v[i]);
+        console.log(p[j]);
+    }
+    // img要素を取得する
+    var img = document.getElementById("f1");
+    var idx = 0;
+    function Button(){
+        if(p[idx] != null){
+            img.src ="./daikisutorayou/" + p[idx] + ".jpg";
+            idx++;}
+        else{
+            img.src = "./daikisutorayou/Y.jpg";
+        }
+    }
+    function BACK_Button(){
+        idx--;
+        if(p[idx] != null){
+            img.src = "./daikisutorayou/" + p[idx] + ".jpg";
+        }
+        else{
+            idx = 0;
+            img.src = "./daikisutorayou/" + p[idx] + ".jpg";
+        }
+    }
+
+    </script>
+</html>

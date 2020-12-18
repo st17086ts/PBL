@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8" />
+    <title>情報科棟マップ</title>
+    <style type="text/css">
+        body { background: beige; margin-left: 2em;}
+    </style>
+</head>
+<body>
+    <script src = "DK.js">
+    </script>
+    <h1>情報科棟マップ</h1>
+    <p>＜現在地＞</p>
+    <p>1F</p>
+    <label>
+        玄関:
+        <input type = "radio" name = "floor1" value = "10">
+    </label>
+    <label>
+        プログラミング室:
+        <input type = "radio" name = "floor1" value = "12">
+    </label>
+    <label>
+        情報工学演習室:
+        <input type = "radio" name = "floor1" value = "13">
+    </label>
+    <label>
+        事務室:
+        <input type = "radio" name = "floor1" value = "16">
+    </label>
+    <label>
+        電算機室:
+        <input type = "radio" name = "floor1" value = "17">
+    </label>
+    <label>
+        電子物性実験室:
+        <input type = "radio" name = "floor1" value = "18">
+    </label>
+    <label>
+        トイレ:
+        <input type = "radio" name = "floor1" value = "21">
+    </label>
+    <label>
+        澤畠先生教員室:
+        <input type = "radio" name = "floor1" value = "22">
+    </label>
+    <label>
+        半導体:
+        <input type = "radio" name = "floor1" value = "23">
+    </label>
+    <label>
+        山口先生教員室:
+        <input type = "radio" name = "floor1" value = "24">
+    </label>
+    <label>
+        弥生先生教員室:
+        <input type = "radio" name = "floor1" value = "25">
+    </label>
+    <label>
+        光物性実験室:
+        <input type = "radio" name = "floor1" value = "26">
+    </label>
+    <label>
+        並木先生教員室:
+        <input type = "radio" name = "floor1" value = "27">
+    </label>
+    <br>
+    <p>2F</p>
+    <label>
+        3I教室:
+        <input type = "radio" name = "floor1" value = "39">
+    </label>
+    <label>
+        電子工学実験室:
+        <input type = "radio" name = "floor1" value = "40">
+    </label>
+    <label>
+        準備室:
+        <input type = "radio" name = "floor1" value = "42">
+    </label>
+    <label>
+        ゼミ室:
+        <input type = "radio" name = "floor1" value = "43">
+    </label>
+    <label>
+        資料室:
+        <input type = "radio" name = "floor1" value = "44">
+    </label>
+    <label>
+        電子情報基礎実験室:
+        <input type = "radio" name = "floor1" value = "45">
+    </label>
+    <label>
+        男子トイレ:
+        <input type = "radio" name = "floor1" value = "48">
+    </label>
+    <label>
+        女子トイレ:
+        <input type = "radio" name = "floor1" value = "49">
+    </label>
+    <label>
+        服部先生教員室:
+        <input type = "radio" name = "floor1" value = "50">
+    </label>
+    <label>
+        更衣室:
+        <input type = "radio" name = "floor1" value = "51">
+    </label>
+    <label>
+        弘畑先生:
+        <input type = "radio" name = "floor1" value = "52">
+    </label>
+    <label>
+        精密実験室:
+        <input type = "radio" name = "floor1" value = "53">
+    </label>
+    <label>
+        中屋敷先生教員室:
+        <input type = "radio" name = "floor1" value = "54">
+    </label>
+    <label>
+        村田先生教員室:
+        <input type = "radio" name = "floor1" value = "55">
+    </label>
+    <label>
+        小飼先生教員室:
+        <input type = "radio" name = "floor1" value = "56">
+    </label>
+    <br>
+    <p>3F</p>
+    <label>
+        5D教室:
+        <input type = "radio" name = "floor1" value = "68">
+    </label>
+    <label>
+        電子応用情報実験室:
+        <input type = "radio" name = "floor1" value = "69">
+    </label>
+    <label>
+        4I教室:
+        <input type = "radio" name = "floor1" value = "72">
+    </label>
+    <label>
+        情報伝達実験室:
+        <input type = "radio" name = "floor1" value = "73">
+    </label>
+    <label>
+        論理設計演習室:
+        <input type = "radio" name = "floor1" value = "76">
+    </label>
+    <label>
+        男子トイレ:
+        <input type = "radio" name = "floor1" value = "77">
+    </label>
+    <label>
+        松崎先生教員室:
+        <input type = "radio" name = "floor1" value = "78">
+    </label>
+    <label>
+        器材室:
+        <input type = "radio" name = "floor1" value = "79">
+    </label>
+    <label>
+        奥出先生教員室:
+        <input type = "radio" name = "floor1" value = "80">
+    </label>
+    <label>
+        電子情報製作実験室:
+        <input type = "radio" name = "floor1" value = "81">
+    </label>
+    <label>
+        市毛先生教員室:
+        <input type = "radio" name = "floor1" value = "82">
+    </label>
+    <label>
+        滝沢先生教員室:
+        <input type = "radio" name = "floor1" value = "83">
+    </label>
+    <label>
+        加藤先生教員室:
+        <input type = "radio" name = "floor1" value = "84">
+    </label>
+    <br>
+    <br>
+    <br>
+    <br>
+    ＜目的地＞
+    <p>1F</p>
+    <label>
+        玄関:
+        <input type = "radio" name = "floor2" value = "10">
+    </label>
+    <label>
+        プログラミング室:
+        <input type = "radio" name = "floor2" value = "12">
+    </label>
+    <label>
+        情報工学演習室:
+        <input type = "radio" name = "floor2" value = "13">
+    </label>
+    <label>
+        事務室:
+        <input type = "radio" name = "floor2" value = "16">
+    </label>
+    <label>
+        電算機室:
+        <input type = "radio" name = "floor2" value = "17">
+    </label>
+    <label>
+        電子物性実験室:
+        <input type = "radio" name = "floor2" value = "18">
+    </label>
+    <label>
+        トイレ:
+        <input type = "radio" name = "floor2" value = "21">
+    </label>
+    <label>
+        澤畠先生教員室:
+        <input type = "radio" name = "floor2" value = "22">
+    </label>
+    <label>
+        半導体:
+        <input type = "radio" name = "floor2" value = "23">
+    </label>
+    <label>
+        山口先生教員室:
+        <input type = "radio" name = "floor2" value = "24">
+    </label>
+    <label>
+        弥生先生教員室:
+        <input type = "radio" name = "floor2" value = "25">
+    </label>
+    <label>
+        光物性実験室:
+        <input type = "radio" name = "floor2" value = "26">
+    </label>
+    <label>
+        並木先生教員室:
+        <input type = "radio" name = "floor2" value = "27">
+    </label>
+    <br>
+    <p>2F</p>
+    <label>
+        3I教室:
+        <input type = "radio" name = "floor2" value = "39">
+    </label>
+    <label>
+        電子工学実験室:
+        <input type = "radio" name = "floor2" value = "40">
+    </label>
+    <label>
+        準備室:
+        <input type = "radio" name = "floor2" value = "42">
+    </label>
+    <label>
+        ゼミ室:
+        <input type = "radio" name = "floor2" value = "43">
+    </label>
+    <label>
+        資料室:
+        <input type = "radio" name = "floor2" value = "44">
+    </label>
+    <label>
+        電子情報基礎実験室:
+        <input type = "radio" name = "floor2" value = "45">
+    </label>
+    <label>
+        男子トイレ:
+        <input type = "radio" name = "floor2" value = "48">
+    </label>
+    <label>
+        女子トイレ:
+        <input type = "radio" name = "floor2" value = "49">
+    </label>
+    <label>
+        服部先生教員室:
+        <input type = "radio" name = "floor2" value = "50">
+    </label>
+    <label>
+        更衣室:
+        <input type = "radio" name = "floor2" value = "51">
+    </label>
+    <label>
+        弘畑先生:
+        <input type = "radio" name = "floor2" value = "52">
+    </label>
+    <label>
+        精密実験室:
+        <input type = "radio" name = "floor2" value = "53">
+    </label>
+    <label>
+        中屋敷先生教員室:
+        <input type = "radio" name = "floor2" value = "54">
+    </label>
+    <label>
+        村田先生教員室:
+        <input type = "radio" name = "floor2" value = "55">
+    </label>
+    <label>
+        小飼先生教員室:
+        <input type = "radio" name = "floor2" value = "56">
+    </label>
+    <br>
+    <p>3F</p>
+    <label>
+        5D教室:
+        <input type = "radio" name = "floor2" value = "68">
+    </label>
+    <label>
+        電子応用情報実験室:
+        <input type = "radio" name = "floor2" value = "69">
+    </label>
+    <label>
+        4I教室:
+        <input type = "radio" name = "floor2" value = "72">
+    </label>
+    <label>
+        情報伝達実験室:
+        <input type = "radio" name = "floor2" value = "73">
+    </label>
+    <label>
+        論理設計演習室:
+        <input type = "radio" name = "floor2" value = "76">
+    </label>
+    <label>
+        男子トイレ:
+        <input type = "radio" name = "floor2" value = "77">
+    </label>
+    <label>
+        松崎先生教員室:
+        <input type = "radio" name = "floor2" value = "78">
+    </label>
+    <label>
+        器材室:
+        <input type = "radio" name = "floor2" value = "79">
+    </label>
+    <label>
+        奥出先生教員室:
+        <input type = "radio" name = "floor2" value = "80">
+    </label>
+    <label>
+        電子情報製作実験室:
+        <input type = "radio" name = "floor2" value = "81">
+    </label>
+    <label>
+        市毛先生教員室:
+        <input type = "radio" name = "floor2" value = "82">
+    </label>
+    <label>
+        滝沢先生教員室:
+        <input type = "radio" name = "floor2" value = "83">
+    </label>
+    <label>
+        加藤先生教員室:
+        <input type = "radio" name = "floor2" value = "84">
+    </label>
+    <br>
+    <button onclick="Button()">output</button> 
+    <table>
+        <tr>
+            <td><h4><a href="lesson.html">
+                <button type="button">トップページへ</button>
+            </a></h4></td>
+            <td><h4><a href="茨城高専マップ.html">
+                <button type="button">茨城高専マップへ</button>
+            </a></h4></td>
+            <td><h4><a href="view.html">
+                <button type="button">茨城高専ビューへ</button>
+            </a></h4></td>
+            <td><h4><a href="schoolmap.html">
+                <button type="button">茨城高専ナビ探索へ</button>
+            </a></h4></td>
+        </tr>
+    </table>
+    <button onclick="Button()">output</button> 
+    <script type = "text/javascript">
+function Button(){
+    // 要素を取得
+var elements = document.getElementsByName( "floor1" ) ;
+
+// 選択状態の値を取得
+for ( var a="", i=elements.length; i--; ) {
+	if ( elements[i].checked ) {
+		var a = elements[i].value ;
+		break ;
+	}
+}
+
+if ( a === "" ) {
+	// 未選択状態
+} else {
+	// aには選択状態の値が代入されている
+	//console.log( a ) ;
+}
+
+// 要素を取得
+var elements = document.getElementsByName( "floor2" ) ;
+
+// 選択状態の値を取得
+for ( var b="", i=elements.length; i--; ) {
+	if ( elements[i].checked ) {
+		var b = elements[i].value ;
+		break ;
+	}
+}
+
+if ( b === "" ) {
+	// 未選択状態
+} else {
+	// aには選択状態の値が代入されている
+	//console.log( b ) ;
+}
+var S = Number( a );
+var G = Number( b );
+var p = new Array(50);
+
+p = dijkstra(a,b);
+var i = 0;
+while(p[i] != null){
+    console.log(p[i]);
+    i++;
+}
+location.href = "V.html?PICUTRE=" + p;
+
+}
+</script>
+</body>
+</html>
